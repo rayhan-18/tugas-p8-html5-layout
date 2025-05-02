@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout HTML5 - Iframe</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        nav {
+            width: 250px;
+            background-color: #e0f7fa;
+            padding: 30px 20px;
+            box-shadow: 2px 0 5px rgba(0,0,0,0,1);
+        }
+
+        nav h3 {
+            margin-top: 0;
+            color: #00695c;
+            font-size: 1.3rem;
+            border-bottom: 2px solid #4db6ac;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: #004d40;
+            padding: 10px 15px;
+            border-radius: 6px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #b2dfdb;
+            color: #00695c;
+        }
+
+        iframe {
+            flex-grow: 1;
+            border: none;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h3>Menu</h3>
+        <a href="konten.html" target="contentframe">Beranda</a>
+        <a href="profile.html" target="contentframe">Profil</a>
+        <a href="contact.html" target="contentframe">Kontak</a>
+    </nav>
+
+    <iframe name="contentframe" src="konten.html"></iframe>
+
+</body>
+</html>
